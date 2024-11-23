@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  istory
+  name: istory
   labels:
-    app:  istory
+    app: istory
 spec:
   selector:
     matchLabels:
@@ -53,7 +53,7 @@ spec:
             failureThreshold: 3
             periodSeconds: 10
           ports:
-            - containerPort:  3306
+            - containerPort: 3306
               name: istory
       volumes:
         - name: application-config
